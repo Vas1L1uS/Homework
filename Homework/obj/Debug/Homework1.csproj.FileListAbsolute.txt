@@ -1,0 +1,8 @@
+C:\Users\russi\Documents\GitHub\Homework\Homework\bin\Debug\Homework.exe.config
+C:\Users\russi\Documents\GitHub\Homework\Homework\bin\Debug\Homework.exe
+C:\Users\russi\Documents\GitHub\Homework\Homework\bin\Debug\Homework.pdb
+C:\Users\russi\Documents\GitHub\Homework\Homework\obj\Debug\Homework1.csproj.AssemblyReference.cache
+C:\Users\russi\Documents\GitHub\Homework\Homework\obj\Debug\Homework1.csproj.SuggestedBindingRedirects.cache
+C:\Users\russi\Documents\GitHub\Homework\Homework\obj\Debug\Homework1.csproj.CoreCompileInputs.cache
+C:\Users\russi\Documents\GitHub\Homework\Homework\obj\Debug\Homework.exe
+C:\Users\russi\Documents\GitHub\Homework\Homework\obj\Debug\Homework.pdb
