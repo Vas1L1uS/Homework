@@ -7,9 +7,11 @@ namespace Homework1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello world!!!");
+
             Console.Write("Hello ");
             Console.Write("world");
-            Console.Write("!!!");
+            Console.WriteLine("!!!");
 
             ReadKey();
         }
