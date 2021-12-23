@@ -105,6 +105,8 @@ namespace Homework3
             {
                 Console.WriteLine("Число непростое ");
             }
+
+            Console.ReadKey();
         }
     }
 }
