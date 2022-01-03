@@ -15,7 +15,17 @@
       "ProjectGuid": "e5e5808c-c6a5-4721-ac4a-a9f98cf85faa",
       "DisplayName": "Homework2",
       "ColorIndex": 1
+    },
+    "fdb69418-0429-4ad1-b1e4-494b2086e627": {
+      "ProjectGuid": "fdb69418-0429-4ad1-b1e4-494b2086e627",
+      "DisplayName": "Homework3",
+      "ColorIndex": 2
+    },
+    "eadd6658-1e9d-4b03-ba76-2df956fac622": {
+      "ProjectGuid": "eadd6658-1e9d-4b03-ba76-2df956fac622",
+      "DisplayName": "Homework4",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
