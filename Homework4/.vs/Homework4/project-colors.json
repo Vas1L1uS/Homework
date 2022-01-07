@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "047ee724-2d32-4e9b-8d87-d969be116b8d": {
+      "ProjectGuid": "047ee724-2d32-4e9b-8d87-d969be116b8d",
+      "DisplayName": "Task1",
+      "ColorIndex": 0
+    },
+    "0a480bf0-66e9-4fae-91ab-2eb0fe33329e": {
+      "ProjectGuid": "0a480bf0-66e9-4fae-91ab-2eb0fe33329e",
+      "DisplayName": "Task2",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "75f70c78-4281-4fe8-be0b-35228725f9c9": {
+      "ProjectGuid": "75f70c78-4281-4fe8-be0b-35228725f9c9",
+      "DisplayName": "Task3",
+      "ColorIndex": 2
+    },
+    "eadd6658-1e9d-4b03-ba76-2df956fac622": {
+      "ProjectGuid": "eadd6658-1e9d-4b03-ba76-2df956fac622",
+      "DisplayName": "HomeworkVideo",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
