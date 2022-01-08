@@ -10,14 +10,61 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Console.Write("Количество строк в математической матрице: ");
-            int row = int.Parse(Console.ReadLine());
 
-            Console.Write("Количество столбцов в математической матрице: ");
-            int column = int.Parse(Console.ReadLine());
+            int row = 0;
+            int column = 0;
+
+            while (true)
+            {
+                Console.Write("Количество строк в математической матрице: ");
+
+                string inputString = Console.ReadLine();
+                bool result = int.TryParse(inputString, out row);
+
+                if (result)
+                {
+                    if (row < 1)
+                    {
+                        Console.WriteLine("Количество строк не может быть меньше 1. Попробуйте еще раз ввести число");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Неудалось конвертировать данное значение к типу int. Попробуйте еще раз ввести число");
+                }
+            }
+
+            while (true)
+            {
+                Console.Write("Количество столбцов в математической матрице: ");
+
+                string inputString = Console.ReadLine();
+                bool result = int.TryParse(inputString, out column);
+
+                if (result)
+                {
+                    if (column < 1)
+                    {
+                        Console.WriteLine("Количество столбцов не может быть меньше 1. Попробуйте еще раз ввести число");
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Неудалось конвертировать данное значение к типу int. Попробуйте еще раз ввести число");
+                }
+            }
 
             int[,] matrix = new int[row, column];
             int[,] matrix2 = new int[row, column];
+            int[,] matrixResult = new int[row,column];
 
             Console.WriteLine();
 
@@ -27,7 +74,7 @@ namespace Task3
             {
                 for (int j = 0; j < column; j++)
                 {
-                    matrix[i, j] = random.Next(10);
+                    matrix[i, j] = random.Next(1, 6);
                 }
             }
 
@@ -35,7 +82,7 @@ namespace Task3
             {
                 for (int j = 0; j < column; j++)
                 {
-                    matrix2[i, j] = random.Next(10);
+                    matrix2[i, j] = random.Next(1, 6);
                 }
             }
 
@@ -93,6 +140,15 @@ namespace Task3
                 Console.WriteLine();
             }
 
+            if (row > column)
+            {
+                row = column;
+            }
+            else
+            {
+                column = row;
+            }
+
             Console.WriteLine(); Console.WriteLine(); Console.WriteLine();
 
             for (int i = 0; i < row; i++) // Вывод матрицы
@@ -117,14 +173,19 @@ namespace Task3
 
             Console.WriteLine("Равно");
 
-            for (int i = 0; i < row; i++) // Вывод умножений матриц
+            for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < column; j++)
                 {
-                    Console.Write($"{matrix[i, j] * matrix2[i, j]} ");
+                    for (int k = 0; k < row; k++)
+                    {
+                        matrixResult[i, j] += matrix[i, k] * matrix2[k, j];
+                    }
+                    Console.Write($"{matrixResult[i, j]} ");
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 }

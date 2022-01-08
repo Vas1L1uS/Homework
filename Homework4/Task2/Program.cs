@@ -27,15 +27,20 @@ namespace Task2
 
             for(int i = 1; i < n; i++)
             {
+                for (int j = 1; j < (n - i); j++)
+                {
+                    Console.Write("  ");
+                }
                 for (int j = 1; j < n; j++)
                 {
                     if (array[i, j] != 0)
                     {
-                        Console.Write($"{array[i, j]} ");
+                        Console.Write($"{array[i, j],4}");
                     }
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 

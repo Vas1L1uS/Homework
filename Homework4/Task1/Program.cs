@@ -30,45 +30,42 @@ namespace Task1
 
             int numberOfMounths = 0;
 
-            //Random random = new Random();
+            Random random = new Random();
+
+            for (int i = 0; i < arrayIncome.Length; i++)
+            {
+                arrayIncome[i] = random.Next(0, 100) * 100;
+            }
+
+            for (int i = 0; i < arrayIncome.Length; i++)
+            {
+                arrayCosts[i] = random.Next(0, 100) * 100;
+            }
+
+            //Console.WriteLine("Вводите доходы через Enter");
 
             //for (int i = 0; i < arrayIncome.Length; i++)
             //{
-            //    arrayIncome[i] = random.Next(0, 100) * 100;
+            //    arrayIncome[i] = int.Parse(Console.ReadLine());
             //}
+
+            //Console.WriteLine();                            Для ручного ввода
+
+            //Console.WriteLine("Вводите расходы через Enter");
 
             //for (int i = 0; i < arrayIncome.Length; i++)
             //{
-            //    arrayCosts[i] = random.Next(0, 100) * 100;
+            //    arrayCosts[i] = int.Parse(Console.ReadLine());
             //}
-
-            Console.WriteLine("Вводите доходы через Enter");
-
-            for (int i = 0; i < arrayIncome.Length; i++)
-            {
-                arrayIncome[i] = int.Parse(Console.ReadLine());
-            }
-
-            Console.WriteLine();
-
-            Console.WriteLine("Вводите расходы через Enter");
-
-            for (int i = 0; i < arrayIncome.Length; i++)
-            {
-                arrayCosts[i] = int.Parse(Console.ReadLine());
-            }
-
-            for (int i = 0; i < arrayIncome.Length; i++)
-            {
-                arrayProfit[i] = arrayIncome[i] - arrayCosts[i];
-                if (arrayIncome[i] - arrayCosts[i] > 0) numberOfMounths++;
-            }
 
             Console.WriteLine("Доход, тыс. руб.    Расход, тыс. руб.    Прибыль, тыс. руб.");
 
             for (int i = 0; i < arrayIncome.Length; i++)
             {
-                Console.WriteLine($"    {arrayIncome[i]}            {arrayCosts[i]}            {arrayProfit[i]}    ");
+                arrayProfit[i] = arrayIncome[i] - arrayCosts[i];
+                if (arrayIncome[i] - arrayCosts[i] > 0) numberOfMounths++;
+
+                Console.WriteLine($"{arrayIncome[i],17}{arrayCosts[i],17}{arrayProfit[i],17}");
             }
 
             int min = 1000000000;
@@ -88,7 +85,7 @@ namespace Task1
                 {
                     if (arrayProfit[l] == min)
                     {
-                        arrayProfit[l] = 1000000000;
+                        arrayProfit[l] = 1000000000;// Минимальному знанчению задается 1млрд от повторного считывания
                         if (limit > 0)
                         {
                             for (int k = 0; k < 12; k++)
