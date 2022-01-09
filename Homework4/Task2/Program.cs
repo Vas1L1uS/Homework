@@ -11,7 +11,19 @@ namespace Task2
         static void Main(string[] args)
         {
             Console.WriteLine("Сколько будет строк в треугольнике Паскаля? (Не больше 27)");
-            int n = int.Parse(Console.ReadLine());
+
+            int n = 0;
+
+            while (true)
+            {
+                n = int.Parse(Console.ReadLine());
+
+                if (n < 28)
+                {
+                    break;
+                }
+                Console.WriteLine("Вы ввели число превышающее максимально значение. Попробуйте еще раз");
+            }
 
             int [,] array = new int [n, n];
 
