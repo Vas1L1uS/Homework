@@ -10,7 +10,7 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Сколько будет строк в треугольнике Паскаля?");
+            Console.WriteLine("Сколько будет строк в треугольнике Паскаля? (Не больше 27)");
             int n = int.Parse(Console.ReadLine());
 
             int [,] array = new int [n, n];
@@ -27,15 +27,46 @@ namespace Task2
 
             for(int i = 1; i < n; i++)
             {
-                for (int j = 1; j < (n - i); j++)
+                if (n < 18)
                 {
-                    Console.Write("  ");
-                }
-                for (int j = 1; j < n; j++)
-                {
-                    if (array[i, j] != 0)
+                    for (int j = 1; j < (n - i); j++)
                     {
-                        Console.Write($"{array[i, j],4}");
+                        Console.Write("  ");
+                    }
+                    for (int j = 1; j < n; j++)
+                    {
+                        if (array[i, j] != 0)
+                        {
+                            Console.Write($"{array[i, j],4}");
+                        }
+                    }
+                }
+                else if (n < 24)
+                {
+                    for (int j = 1; j < (n - i); j++)
+                    {
+                        Console.Write("   ");
+                    }
+                    for (int j = 1; j < n; j++)
+                    {
+                        if (array[i, j] != 0)
+                        {
+                            Console.Write($"{array[i, j],6}");
+                        }
+                    }
+                }
+                else if (n > 23)
+                {
+                    for (int j = 1; j < (n - i); j++)
+                    {
+                        Console.Write("    ");
+                    }
+                    for (int j = 1; j < n; j++)
+                    {
+                        if (array[i, j] != 0)
+                        {
+                            Console.Write($"{array[i, j],8}");
+                        }
                     }
                 }
                 Console.WriteLine();

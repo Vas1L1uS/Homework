@@ -34,12 +34,12 @@ namespace Task1
 
             for (int i = 0; i < arrayIncome.Length; i++)
             {
-                arrayIncome[i] = random.Next(0, 100) * 100;
+                arrayIncome[i] = random.Next(0, 10) * 100;
             }
 
             for (int i = 0; i < arrayIncome.Length; i++)
             {
-                arrayCosts[i] = random.Next(0, 100) * 100;
+                arrayCosts[i] = random.Next(0, 10) * 100;
             }
 
             //Console.WriteLine("Вводите доходы через Enter");
@@ -68,7 +68,8 @@ namespace Task1
                 Console.WriteLine($"{arrayIncome[i],17}{arrayCosts[i],17}{arrayProfit[i],17}");
             }
 
-            int min = 1000000000;
+            int min = arrayProfit[11];
+            int max = arrayProfit[0];
 
             int limit = 3;
 
@@ -80,12 +81,16 @@ namespace Task1
                     {
                         min = arrayProfit[j];
                     }
+                    if (arrayProfit[j] > max)
+                    {
+                        max = arrayProfit[j];
+                    }
                 }
                 for (int l = 0; l < 12; l++)
                 {
                     if (arrayProfit[l] == min)
                     {
-                        arrayProfit[l] = 1000000000;// Минимальному знанчению задается 1млрд от повторного считывания
+                        arrayProfit[l] = max;
                         if (limit > 0)
                         {
                             for (int k = 0; k < 12; k++)
@@ -101,7 +106,7 @@ namespace Task1
                     }
                 }
                 limit--;
-                min = 1000000000;
+                min = arrayProfit[11];
             }
 
             Console.Write("Худшая прибыль в месяцах ");
@@ -113,6 +118,8 @@ namespace Task1
                     Console.Write($"{worstMonths[i]} ");
                 }
             }
+
+            Console.WriteLine();
 
             Console.WriteLine($"Месяцев с положительной прибылью: {numberOfMounths}");
 
