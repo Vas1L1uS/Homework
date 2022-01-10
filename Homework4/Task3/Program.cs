@@ -140,50 +140,47 @@ namespace Task3
                 Console.WriteLine();
             }
 
-            if (row > column)
+            if (row != column)
             {
-                row = column;
+                Console.WriteLine("Матрицы не возможно перемножить так, как они не согласованы");
             }
             else
             {
-                column = row;
-            }
-
-            Console.WriteLine(); Console.WriteLine(); Console.WriteLine();
-
-            for (int i = 0; i < row; i++) // Вывод матрицы
-            {
-                for (int j = 0; j < column; j++)
+                Console.WriteLine(); Console.WriteLine(); Console.WriteLine();
+                for (int i = 0; i < row; i++) // Вывод матрицы
                 {
-                    Console.Write($"{matrix[i, j]} ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("Умножить с");
-
-            for (int i = 0; i < row; i++) // Вывод матрицы2
-            {
-                for (int j = 0; j < column; j++)
-                {
-                    Console.Write($"{matrix2[i, j]} ");
-                }
-                Console.WriteLine();
-            }
-
-            Console.WriteLine("Равно");
-
-            for (int i = 0; i < row; i++)
-            {
-                for (int j = 0; j < column; j++)
-                {
-                    for (int k = 0; k < row; k++)
+                    for (int j = 0; j < column; j++)
                     {
-                        matrixResult[i, j] += matrix[i, k] * matrix2[k, j];
+                        Console.Write($"{matrix[i, j]} ");
                     }
-                    Console.Write($"{matrixResult[i, j]} ");
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
+
+                Console.WriteLine("Умножить с");
+
+                for (int i = 0; i < row; i++) // Вывод матрицы2
+                {
+                    for (int j = 0; j < column; j++)
+                    {
+                        Console.Write($"{matrix2[i, j]} ");
+                    }
+                    Console.WriteLine();
+                }
+
+                Console.WriteLine("Равно");
+
+                for (int i = 0; i < row; i++)
+                {
+                    for (int j = 0; j < column; j++)
+                    {
+                        for (int k = 0; k < row; k++)
+                        {
+                            matrixResult[i, j] += matrix[i, k] * matrix2[k, j];
+                        }
+                        Console.Write($"{matrixResult[i, j]} ");
+                    }
+                    Console.WriteLine();
+                }
             }
             Console.ReadKey();
         }
