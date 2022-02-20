@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2cd0a674-4429-4ab5-906a-a778d70ea19e": {
+      "ProjectGuid": "2cd0a674-4429-4ab5-906a-a778d70ea19e",
+      "DisplayName": "Homework5",
+      "ColorIndex": 0
+    },
+    "cd8b80f6-9f72-4c7f-9faa-426c4fad4f3d": {
+      "ProjectGuid": "cd8b80f6-9f72-4c7f-9faa-426c4fad4f3d",
+      "DisplayName": "Homework5(2)",
+      "ColorIndex": 1
+    },
+    "a4aed9ec-fa66-436d-9aa1-f28b93936dc9": {
+      "ProjectGuid": "a4aed9ec-fa66-436d-9aa1-f28b93936dc9",
+      "DisplayName": "Homework5Add",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
