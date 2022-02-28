@@ -8,9 +8,17 @@ namespace Homework5_2_
 {
     internal class Program
     {
-        static string[] ReverseWords(string str) // Перестановка слов
+
+        public static string[] DivisionIntoWords(string str) // Разделение предложения на слова
         {
             string[] wordsArray = str.Split(' ');
+
+            return wordsArray;
+        }
+
+        static string[] ReverseWords(string str) // Перестановка слов
+        {
+            string[] wordsArray = DivisionIntoWords(str);
 
             int a = 1;
             string temporary;
@@ -34,8 +42,7 @@ namespace Homework5_2_
 
         static void Main(string[] args)
         {
-            string str = Console.ReadLine();
-            ConsoleWrite(ReverseWords(str));
+            ConsoleWrite(ReverseWords(Console.ReadLine()));
         }
     }
 }

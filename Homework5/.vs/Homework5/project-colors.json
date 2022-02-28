@@ -8,14 +8,19 @@
     },
     "cd8b80f6-9f72-4c7f-9faa-426c4fad4f3d": {
       "ProjectGuid": "cd8b80f6-9f72-4c7f-9faa-426c4fad4f3d",
-      "DisplayName": "Homework5(2)",
+      "DisplayName": "Homework5",
       "ColorIndex": 1
     },
     "a4aed9ec-fa66-436d-9aa1-f28b93936dc9": {
       "ProjectGuid": "a4aed9ec-fa66-436d-9aa1-f28b93936dc9",
       "DisplayName": "Homework5Add",
       "ColorIndex": 2
+    },
+    "1ce2bcbe-ad5f-48c5-8a7d-06be0db67da3": {
+      "ProjectGuid": "1ce2bcbe-ad5f-48c5-8a7d-06be0db67da3",
+      "DisplayName": "Task1",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
