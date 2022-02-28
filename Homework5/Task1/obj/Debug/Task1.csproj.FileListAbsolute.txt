@@ -1,8 +1,0 @@
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\bin\Debug\Task1.exe.config
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\bin\Debug\Task1.exe
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\bin\Debug\Task1.pdb
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\obj\Debug\Task1.csproj.AssemblyReference.cache
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\obj\Debug\Task1.csproj.SuggestedBindingRedirects.cache
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\obj\Debug\Task1.csproj.CoreCompileInputs.cache
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\obj\Debug\Task1.exe
-C:\Users\russi\Documents\GitHub\Homework\Homework5\Task1\obj\Debug\Task1.pdb
